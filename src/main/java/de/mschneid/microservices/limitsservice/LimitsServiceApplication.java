@@ -3,9 +3,12 @@ package de.mschneid.microservices.limitsservice;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.netflix.hystrix.EnableHystrix;
+import org.springframework.integration.config.EnableMessageHistory;
 
 @SpringBootApplication
 @EnableDiscoveryClient
+@EnableHystrix
 public class LimitsServiceApplication {
 
 	public static void main(String[] args) {
